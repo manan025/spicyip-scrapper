@@ -62,7 +62,6 @@ for i in range(1, end_page + 1):
     reader = csv.reader(file)
     writer = csv.writer(file)
 
-    # if link is already present in the file, just add cateogry to the row. if not, add the row
     df = pd.read_csv('data.csv')
     links = df['link'].tolist()
     for row in lst:
